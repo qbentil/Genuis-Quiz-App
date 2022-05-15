@@ -50,6 +50,7 @@ h3{
   padding: 2rem;
   overflow-y: hidden;
 }
+
 .container-alt{
   width: 100vw;
   /* height: 93vh; */
@@ -136,8 +137,8 @@ small>*{
   font-weight: bold;
 }
 #me{
-  width: 25rem;
-  height: 25rem;
+  width: 18rem;
+  height: 18rem;
   border: none;
   border: 0.2rem solid blue;
   border-radius: 100vh;
