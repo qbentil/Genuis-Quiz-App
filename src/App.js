@@ -1,10 +1,13 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages";
-import HighScroes from "./pages/HighScores";
-import Game from "./pages/Game";
+
+import { Route, Routes } from "react-router-dom";
+
 import End from "./pages/End";
-import Select from "./components/Select";
+import Game from "./pages/Game";
+import HighScroes from "./pages/HighScores";
+import HomePage from "./pages";
+import Select from "./pages/Select";
+
 function App() {
   return (
     <div className="App">

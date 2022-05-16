@@ -1,7 +1,8 @@
+import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 import React from "react";
 import logo from "../logo.svg";
-import { Link } from "react-router-dom";
-import Footer from "../components/footer";
+
 // import {RiQuestionAnswerLine} from 'react-icons/ri'
 const HomePage = () => {
   return (
@@ -17,7 +18,7 @@ const HomePage = () => {
             <span className="code"></span>QENUIS <span className="code"></span>{" "}
             Quiz
           </h1>
-          <Link to={"/game"} className="btn">
+          <Link to={"/select"} className="btn">
             Start A Quiz
           </Link>
           <Link to={"highscores"} className="btn">
