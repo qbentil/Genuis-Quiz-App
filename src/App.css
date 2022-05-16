@@ -106,7 +106,8 @@ h3{
 .btn{
   font-size: 1.8rem;
   padding: 1rem;
-  width: 30rem;
+  min-width: 30rem;
+  max-width: 32rem;
   text-align: center;
   border: 0.1rem solid orangered;
   margin-bottom: 1rem;
