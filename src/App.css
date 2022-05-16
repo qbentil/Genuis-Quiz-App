@@ -15,11 +15,11 @@ h1,h2,h3,h4{
 }
 h1{
   font-size: 3.5rem;
-  color: #00f;
+  color: orangered;
   margin-bottom: 5rem;  
 }
 h1>span{
-  color: #00f;
+  color: orangered;
   font-size: 5.4rem;
   font-weight: 500;
 }
@@ -36,7 +36,7 @@ h3{
   color: rgb(218, 0, 0);
 }
 .success{
-  color: rgb(0, 218, 0);
+  color: orange;
 }
 /* utilities */
 .container, .footer, .container-alt{
@@ -69,12 +69,12 @@ h3{
   align-items: center;
   margin: 0 auto;
   padding: 1rem;
-  background-color: #00f;
+  background-color: orangered;
 }
 .footer{
   overflow-y: hidden;
   height: 5vh !important;
-  background-color: #00f;
+  background-color: orangered;
 }
 .container > *{
   width: 100%;
@@ -108,25 +108,25 @@ h3{
   padding: 1rem;
   width: 30rem;
   text-align: center;
-  border: 0.1rem solid #00f;
+  border: 0.1rem solid orangered;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: #00f;
+  color: orangered;
   background-color: #fff;
 }
 .btn-selected{
-  border: 0.1rem solid #0f0;
-  color: #0f0;
+  border: 0.1rem solid orange;
+  color: orange;
 }
 .btn:hover{
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 255, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 69, 0, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
 .btn-selected:hover{
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 255, 0, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 169, 0, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -144,7 +144,7 @@ h3{
 small>*, small{
   margin-bottom: 1rem;
   font-size: 1.1rem;
-  color: blueviolet;
+  color: orange;
 }
 small>*{
   font-weight: bold;
@@ -153,7 +153,7 @@ small>*{
   width: 18rem;
   height: 18rem;
   border: none;
-  border: 0.2rem solid blue;
+  border: 0.2rem solid orangered;
   border-radius: 100vh;
 }
 .code{
@@ -191,11 +191,11 @@ input {
   padding: 1.5rem;
   font-size: 1.8rem;
   border: none;
-  color: #00f;
-  box-shadow: 0 0.1rem 1.4rem 0 rgba(0, 0, 255, 0.5);
+  color: orangered;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(255, 69, 0, 0.5);
 }
 input:focus{
-    outline: #00f;
+    outline: orangered;
 }
 input::placeholder {
   color: #aaa;
