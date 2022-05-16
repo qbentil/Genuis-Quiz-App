@@ -39,10 +39,14 @@ const Select = () => {
           }
           {
             difficulty != null && selector === 'difficulty' &&(
-              <>
+              
               <Link to='/game'  className="btn btn-selected" onClick={() => prepareGame()}>Continue ==&gt; {difficulty.title}</Link>
+            )
+          }
+          {
+          selector === 'difficulty' &&(
+              
               <button  className="btn btn-danger" onClick={() => setSelector('category')}>Change Category</button>
-              </>
             )
           }
       </div>
