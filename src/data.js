@@ -1,12 +1,9 @@
 export const Categories = [
     {
         id: 'default',
-        title: 'Default'
+        title: 'General'
     },
-    {
-      id: 1,
-      title: "General",
-    },
+    
     {
       id: 2,
       title: "Programming",
