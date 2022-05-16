@@ -1,41 +1,53 @@
+// import { Categories, Difficulties } from "../../data";
+
+import React, { useState } from "react";
+
+import Category from "../../components/Category";
+import Difficulty from "../../components/Difficulty";
 import Footer from "../../components/footer";
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Select = () => {
+  const [category, setCategory] = useState(null)
+  const [difficulty, setDifficulty] = useState(null)
+  const [selector, setSelector] = useState('category')
+
+  const prepareGame = () => {
+    localStorage.setItem('category',JSON.stringify(category))
+    localStorage.setItem('difficulty',JSON.stringify(difficulty))
+    // window.location.href = "localhost:3001/game"
+  }
   return (
-    <div>
-      <div className="container">
-        <div id="end" className="flex-center flex-column">
-          <h1>-- Select Quiz --</h1>
-          <button className="btn" onclick="getQuestionSet('general')" id="general">
-            General
-          </button>
-          <button className="btn" onclick="getQuestionSet('html')" id="html">
-            HTML
-          </button>
-          <button className="btn" onclick="getQuestionSet('css')" id="css">
-            CSS
-          </button>
-          <button
-            className="btn"
-            onclick="getQuestionSet('javascript')"
-            id="javascript"
-          >
-            JavaScript
-          </button>
-          <button className="btn" onclick="getQuestionSet('php')" id="php">
-            PHP
-          </button>
-          <button className="btn" onclick="getQuestionSet('python')" id="python">
-            Python
-          </button>
-          <button className="btn" onclick="getQuestionSet('java')" id="java">
-            Java
-          </button>
-        </div>
+    <>
+      <div className="container flex-column">
+        {
+          selector === 'category' && (
+            <Category setCategory={setCategory} />
+          )
+        }   
+        {
+                    selector === 'difficulty' && (
+                      <Difficulty setDifficulty={setDifficulty} />
+                    )
+        }   
+
+          <br /><br />
+          {
+            category != null && selector === 'category' && (
+              <button className="btn btn-selected" onClick={() => setSelector('difficulty')}>Continue ==&gt; {category.title}</button>
+            )
+          }
+          {
+            difficulty != null && selector === 'difficulty' &&(
+              <>
+              <Link to='/game'  className="btn btn-selected" onClick={() => prepareGame()}>Continue ==&gt; {difficulty.title}</Link>
+              <button  className="btn btn-danger" onClick={() => setSelector('category')}>Change Category</button>
+              </>
+            )
+          }
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
