@@ -19,16 +19,20 @@
 }
 .choice-prefix{
     padding: 1.5rem 2.5rem;
-    background: #00f;
+    background: orangered;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .choice-text{
     padding: 1.5rem;
     width: 100%;
     text-align: left;
+    align-items: center;
 }
 .correct{
-    background-color: #0f0;
+    background-color: orange;
 }
 .incorrect{
     background-color: #f00;
@@ -48,12 +52,12 @@
     margin-top: 1.5rem;
     width: 20rem;
     height: 3.5rem;
-    border: 0.25rem #00f solid;
+    border: 0.25rem orangered solid;
 }
 .progress-bar-full{
     width: 0%;
     height: 100%;
-    background: #00f;
+    background: orangered;
 }
 .code-in-question{
     font-size: 1.5rem !important;
@@ -65,7 +69,7 @@
 #loader{
     border: 1.6rem #fff solid;
     border-radius: 50%;
-    border-top: 1.6rem solid #00f;
+    border-top: 1.6rem solid orangered;
     width: 12rem;
     height: 12rem;
     animation: spin 2s linear infinite;
