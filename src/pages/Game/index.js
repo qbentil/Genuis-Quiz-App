@@ -1,13 +1,14 @@
-import React from "react";
-import Footer from "../../components/footer";
 import './style.css'
+
+import Footer from "../../components/footer";
+import React from "react";
 
 const Game = () => {
   return (
     <div>
       <div className="container-alt">
         <div id="loader hidden"></div>
-        <div id="game" className="text-center flex-column ">
+        <div id="game" className="text-center flex-column">
           <div id="hud">
             <div id="hud-item">
               <p className="hud-prefix">

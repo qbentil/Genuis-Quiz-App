@@ -11,7 +11,7 @@ const HomePage = () => {
         <div id="home" className="flex-center flex-column">
           <div className="dev flex-center flex-column">
             <img src={logo} alt="" id="me" />
-            {/* <RiQuestionAnswerLine  id="me" color='red' /> */}
+            {/* <RiQuestionAnswerLine  id="me" color='orange' /> */}
             <small id="welcome">Welcome To</small>
           </div>
           <h1 className="text-center">
