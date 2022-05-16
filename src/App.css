@@ -80,7 +80,10 @@ h3{
   width: 100%;
 }
 .flex{
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .flex-column{
   display: flex;
@@ -111,9 +114,19 @@ h3{
   color: #00f;
   background-color: #fff;
 }
+.btn-selected{
+  border: 0.1rem solid #0f0;
+  color: #0f0;
+}
 .btn:hover{
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 255, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.btn-selected:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 255, 0, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
