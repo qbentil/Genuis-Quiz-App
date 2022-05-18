@@ -233,3 +233,9 @@ input::placeholder {
   height: 100vh;
   overflow: auto !important;
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+   font-size: 2.5rem;
+  }
+}
