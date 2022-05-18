@@ -13,9 +13,13 @@ const Select = () => {
   const [selector, setSelector] = useState('category')
 
   const prepareGame = () => {
-    localStorage.setItem('category',JSON.stringify(category))
-    localStorage.setItem('difficulty',JSON.stringify(difficulty))
-    // window.location.href = "localhost:3001/game"
+    const quiz_config = {
+      category: category,
+      difficulty: difficulty.id
+    }
+    localStorage.setItem('game_info',JSON.stringify(quiz_config))
+    // localStorage.setItem('difficulty',JSON.stringify(difficulty))
+
   }
   return (
     <>
@@ -34,7 +38,7 @@ const Select = () => {
           <br /><br />
           {
             category != null && selector === 'category' && (
-              <button className="btn btn-selected" onClick={() => setSelector('difficulty')}>Continue ==&gt; {category.title}</button>
+              <button className="btn btn-selected" onClick={() => setSelector('difficulty')}>Continue</button>
             )
           }
           {
