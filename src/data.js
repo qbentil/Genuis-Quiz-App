@@ -1,8 +1,8 @@
 export const Categories = [
-    {
-        id: 'any',
-        title: 'Any Category'
-    },
+    // {
+    //     id: 'any',
+    //     title: 'Any Category'
+    // },
     
     {
       id: 9,
@@ -39,10 +39,10 @@ export const Categories = [
   ];
 
 export const Difficulties = [
-    {
-        id: 'any',
-        title: 'Any Difficulty'
-    },
+    // {
+    //     id: 'any',
+    //     title: 'Any Difficulty'
+    // },
     {
         id: 'easy',
         title: 'Easy'
