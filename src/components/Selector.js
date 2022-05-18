@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const Selector = ({ data, action }) => {
   // const [first, setFirst] = useState(null)
