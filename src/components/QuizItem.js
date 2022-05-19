@@ -4,12 +4,12 @@ const choices = ['A', 'B', 'C', 'D', 'E']
 const QuizItem = ({max, count, question, action}) => {
     // document.getElementById('question').innerHTML = question.question
     const answerIndex = Math.floor(Math.random() * question.incorrect_answers.length)
-    const [options, setOptions] = useState(question.incorrect_answers)
+    // const [options, setOptions] = useState(question.incorrect_answers)
     const [score, setScore] = useState(0)
-    const newArr = [...options]
+    // const newArr = [...options]
     // console.log(answerIndex);
-    newArr.splice(answerIndex, 0, question.correct_answer)
-    options.length <=3 && setOptions(newArr);
+    question.incorrect_answers.splice(answerIndex, 0, question.correct_answer)
+    // options.length <=3 && setOptions(newArr);
 
 
     // add correct answer to answers
@@ -23,13 +23,14 @@ const QuizItem = ({max, count, question, action}) => {
             e.currentTarget.classList.add('incorrect');
         }
         
-        if(count < max)
+        if(count >= max)
         {
-            action(count+1)
-        }else{
             alert('FInish')
+        }else{
+            action(count+1)
         }
     }
+
   return (
     <div id="game" className="text-center flex-column ">
       <div id="hud">
@@ -51,7 +52,7 @@ const QuizItem = ({max, count, question, action}) => {
       </div>
       <h2 id="question">{question.question} </h2>
         {
-        options.map((ch, index) => (
+        question.incorrect_answers.map((ch, index) => (
             <div className="choice-container" data-index = {index} key={index} onClick = {(e) => handleChoice(e)}>
             <p className="choice-prefix">{choices[index]}</p>
             <p className="choice-text">{ch}</p>
